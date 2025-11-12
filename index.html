@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller JavaScript - Nivel Intermedio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Taller Práctico de JavaScript </h1>
+
+        <!-- Sección 1: Calculadora -->
+        <section class="seccion">
+            <h2>Calculadora Interactiva</h2>
+            <div class="calculadora">
+                <div class="input-group">
+                    <label for="num1">Número 1:</label>
+                    <input type="number" id="num1" placeholder="Ingrese un número">
+                </div>
+                <div class="input-group">
+                    <label for="num2">Número 2:</label>
+                    <input type="number" id="num2" placeholder="Ingrese un número">
+                </div>
+                <div class="botones">
+                    <button id="btnSumar">Sumar</button>
+                    <button id="btnRestar">Restar</button>
+                    <button id="btnMultiplicar">Multiplicar</button>
+                    <button id="btnDividir">Dividir</button>
+                </div>
+                <div id="resultadoCalc" class="resultado"></div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Formulario de Registro -->
+        <section class="seccion">
+            <h2>Formulario de Registro</h2>
+            <form id="formRegistro">
+                <div class="input-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" placeholder="Mínimo 3 caracteres">
+                    <span id="contadorNombre" class="contador"></span>
+                </div>
+                <div class="input-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="text" id="correo" placeholder="ejemplo@correo.com">
+                </div>
+                <div class="input-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" placeholder="Mínimo 6 caracteres">
+                    <span id="contadorContrasena" class="contador"></span>
+                </div>
+                <div class="input-group">
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaNacimiento">
+                </div>
+                <button type="submit" id="btnRegistrar">Registrar</button>
+                <div id="mensajeRegistro" class="mensaje"></div>
+            </form>
+        </section>
+
+        <!-- Sección 3: Cálculo de Diferencia de Fechas -->
+        <section class="seccion">
+            <h2>Calculadora de Diferencia de Fechas</h2>
+            <div class="fechas">
+                <div class="input-group">
+                    <label for="fecha1">Primera fecha:</label>
+                    <input type="date" id="fecha1">
+                </div>
+                <div class="input-group">
+                    <label for="fecha2">Segunda fecha:</label>
+                    <input type="date" id="fecha2">
+                </div>
+                <button id="btnCalcularFechas">Calcular Diferencia</button>
+                <div id="resultadoFechas" class="resultado"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
